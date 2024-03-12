@@ -8,6 +8,9 @@ provider:
   name: aws
   runtime: python3.8
   region: us-east-1
+  s3:
+    filesForTextractPS:
+      name: files-for-textract-ps
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -36,11 +39,6 @@ resources:
         StreamSpecification:
           StreamViewType: NEW_IMAGE
 
-    MyS3Bucket:
-      Type: AWS::S3::Bucket
-      Properties:
-        BucketName: FilesForTextract
-
 functions:
   get_textract_info:
     handler: handler.get_textract_info
@@ -60,8 +58,8 @@ functions:
     handler: handler.process_file
     events:
       - s3:
-          bucket: FilesForTextract
-          event: s3:ObjectCreated:POST
+          bucket: ${self:provider.s3.filesForTextractPS.name}
+          event: s3:ObjectCreated:*
 
   make_callback:
     handler: handler.make_callback

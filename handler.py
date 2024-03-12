@@ -9,7 +9,7 @@ dynamodb = boto3.resource('dynamodb')
 textract_client = boto3.client('textract')
 s3 = boto3.client('s3')
 table_name = 'FilesTable'  # DynamoDB table name
-bucket_name = 'FilesForTextract'  # S3 bucket name
+bucket_name = 'files-for-textract-ps'  # S3 bucket name
 
 
 def get_textract_results(file_id):
