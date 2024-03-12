@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+=======
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Serverless directories
+.serverless
+
+>>>>>>> master
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -25,6 +49,11 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+<<<<<<< HEAD
+=======
+.idea
+.idea/
+>>>>>>> master
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -157,4 +186,8 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+<<<<<<< HEAD
 #.idea/
+=======
+#.idea/
+>>>>>>> master
