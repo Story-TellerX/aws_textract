@@ -1,0 +1,58 @@
+openapi: 3.0.0
+info:
+  title: "My Serverless App API"
+  version: "1.0.0"
+paths:
+  /files/{file_id}:
+    get:
+      summary: Get Textract information for a file
+      parameters:
+        - name: file_id
+          in: path
+          required: true
+          description: ID of the file
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example: |
+                      {
+                        "file_id": "your_file_id",
+                        "textract_result": "file_textraxt_result"
+                      }
+        '404':
+          description: File not found
+  /files:
+    post:
+      summary: Create a new file
+      requestBody:
+        required: true
+        content:
+         application/json:
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example: |
+                      {
+                        "file_id": "your_file_id",
+                        "upload_url": "htttps://your_presigned_url.com"
+                      }
+        '500':
+          description: Bad request
+          content:
+            application/json:
+              example: |
+                      {
+                        "statusCode": 500,
+                        "body": {
+                          "Error": "Bad Request",
+                          "ErrorMessage": "Invalid file content"
+                        }
+                      }
