@@ -41,7 +41,6 @@ paths:
             application/json:
               example: |
                       {
-                        "file_id": "your_file_id",
                         "upload_url": "htttps://your_presigned_url.com"
                       }
         '500':

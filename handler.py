@@ -122,13 +122,6 @@ def update_dynamodb(file_id, textract_result):
 
 
 def process_file(event, context):
-    """
-    process_file handler function
-    param: event: The event object for the Lambda function.
-    param: context: The context object for the lambda function.
-    return: The list of Block objects recognized in the document
-    passed in the event object.
-    """
 
     try:
         # Retrieve the bucket and object key from the S3 event

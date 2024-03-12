@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Distribution / packaging
 .Python
 env/
@@ -21,7 +19,6 @@ var/
 # Serverless directories
 .serverless
 
->>>>>>> master
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -31,29 +28,11 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
 wheels/
 share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 MANIFEST
-<<<<<<< HEAD
-=======
 .idea
 .idea/
->>>>>>> master
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -151,7 +130,6 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
 venv/
 ENV/
 env.bak/
@@ -186,8 +164,4 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-<<<<<<< HEAD
 #.idea/
-=======
-#.idea/
->>>>>>> master
