@@ -41,9 +41,6 @@ resources:
       Properties:
         BucketName: FilesForTextract
 
-plugins:
-  - serverless-aws-documentation
-
 functions:
   get_textract_info:
     handler: handler.get_textract_info
